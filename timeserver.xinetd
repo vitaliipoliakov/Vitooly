@@ -1,0 +1,12 @@
+# xinetd service config file. Should be stored in /etc/xinetd.d/ as for Ubuntu 14.04
+# default: on
+# description: the time server.
+service time-server
+{
+	flags		= REUSE
+	socket_type	= stream        
+	wait		= no
+	user		= nobody
+	server		= /usr/local/bin/time-server
+	disable		= no
+}

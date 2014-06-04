@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+read ZONE
+echo $ZONE
+if ls /usr/share/zoneinfo/`echo "$ZONE" | sed 's/\/.*//g'` 2> /dev/null \
+	| grep --silent ^`echo "$ZONE" | sed 's/.*\///g'`$ 		# parse zone and locate it's availability in /usr/share/zoneinfo. Also redirect stderr to null just in case.
+then 
+	# echo "The current time in $ZONE is:"
+	echo `gettext -d timecl "The current time is:"`
+	TZ=$ZONE date
+else
+	# echo "0"
+	echo `gettext -d timecl "No such city or zone in the system. Refer to date TZ specs."`
+	# echo "No such city or zone in the system. Refer to date TZ specs."
+fi
+
