@@ -5,4 +5,4 @@ install:
 	service xinetd restart
 	msgfmt -o timecl-ru.mo timecl-ru.po
 	install timecl-ru.mo /usr/share/locale/ru/LC_MESSAGES/timecl.mo
-	locale-gen
+	# locale-gen

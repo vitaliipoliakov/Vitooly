@@ -8,7 +8,7 @@ if ls /usr/share/zoneinfo/`echo "$ZONE" | sed 's/\/.*//g'` 2> /dev/null \
 then 
 	# echo "The current time in $ZONE is:"
 	# echo `gettext -d timecl "The current time is:"`
-	TZ=$ZONE date
+	TZ=$ZONE date --rfc-3339='seconds'
 else
 	echo "0"
 	# echo `gettext -d timecl "No such city or zone in the system. Refer to date TZ specs."`

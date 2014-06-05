@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Fcuk the copyright. Do whatever you want with this file.
-# 
-#: timecl:63
+#
+#: timecl:73
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 13:15+0400\n"
+"POT-Creation-Date: 2014-06-05 14:07+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Vitalii Poliakov <vitaliyp92@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,37 +18,49 @@ msgstr ""
 
 #: timecl:6
 msgid "Enter the host:"
-msgstr "Введите адрес сервера:"
+msgstr "Введите адрес сервера: "
 
 #: timecl:13
 msgid ""
 "OPERATING PORT MAY BE OCCUPIED OR NOT INSTALLED. CHECK THE /ETC/SERVICES"
-msgstr "СЕТЕВОЙ ПОРТ ПРИЛОЖЕНИЯ УЖЕ ЗАНЯТ ДРУГИМ ПРИЛОЖЕНИЕМ ЛИБО НЕ УСТАНОВЛЕН. ПРОВЕРЬТЕ /ETC/SERVICES"
+msgstr "СЕТЕВОЙ ПОРТ ПРИЛОЖЕНИЯ УЖЕ ЗАНЯТ ДРУГИМ ПРИЛОЖЕНИЕМ ЛИБО НЕ УСТАНОВЛЕН. ПРОВЕРЬТЕ /ETC/SERVICES "
 
 #: timecl:21
 msgid "Server OK"
-msgstr "Сервер жив."
+msgstr "Сервер жив. "
 
 #: timecl:23
 msgid "Server is not available at the host specified. Halting."
-msgstr "Сервер недоступен по указанному адресу. Завершение работы приложения."
+msgstr "Сервер недоступен по указанному адресу. Завершение работы приложения. "
 
-#: timecl:50
-msgid "Enter the zone"
-msgstr "Введите временную зону"
+#: timecl:29
+msgid "Application stared. Press Ctrl+c to exit."
+msgstr "Приложение запущено. Нажмите Ctrl+c для выхода в любой момент. "
 
-#: timecl:51
-msgid "Zone/City:"
-msgstr "Зона/Город:"
+#: timecl:32
+msgid "Enter the zone:"
+msgstr "Введите зону: "
 
-#: timecl:55
+#: timecl:34
+msgid "Enter the city:"
+msgstr "Введите город: "
+
+#: timecl:44 timecl:65
 msgid "No such city or zone in the system. Refer to date TZ specs."
-msgstr "Не удалось определить город или зону. Ознакомтесь со справкой по TZ."
+msgstr "Не удалось определить город или зону. Ознакомтесь со справкой по TZ. "
 
-#: timecl:57
+#: timecl:46 timecl:67
 msgid "The current time in this time zone is: "
-msgstr "Текущее время в выбранной зоне:"
+msgstr "Текущее время в выбранной зоне: "
+
+#: timecl:60
+msgid "Enter the zone"
+msgstr "Введите временную зону "
 
 #: timecl:61
+msgid "Zone/City:"
+msgstr "Зона/Город: "
+
+#: timecl:71
 msgid "Do you want to fetch the time again?"
-msgstr "Запросить время еще раз?"
+msgstr "Запросить время еще раз? "
