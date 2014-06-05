@@ -48,10 +48,17 @@ fi
 while [ True ] 
 do
 	if OUTP=$(zenity --entry --title "`gettext -d timecl "Enter the zone"`" \
-			 --text "`gettext -d timecl "The zone"`" --entry-text "Europe/Paris" | nc $HOST $PORT)
+			 --text "`gettext -d timecl "Zone/City:"`" --entry-text "Europe/Paris" | nc $HOST $PORT)
 	then
-		echo $OUTP
-		if zenity --question --text="$OUTP \r\n`gettext -d timecl "Do you want to fetch the time again?"`"
+		if [ $OUTP = 0 2> /dev/null ]
+		then
+			TEXT=$(echo `gettext -d timecl "No such city or zone in the system. Refer to date TZ specs."`)
+		else
+			TEXT=$(echo `gettext -d timecl "The current time in this time zone is: "`)
+			TEXT+=$(echo "\r\n`gettext -d date "$OUTP"`")     # does not work :c
+		fi
+		echo $TEXT
+		if zenity --question --text="$TEXT \r\n`gettext -d timecl "Do you want to fetch the time again?"`"
 		then
 			echo ""
 		else 
