@@ -1,5 +1,6 @@
 The time fetcher which is capable to operate over the network. Accepts the timezone input parameter. 
-Translated into Russian from English. Written using bash.
+Translated into Russian from English. Written using bash. The application checks the presence of 
+timezones entered for existence in the server's /usr/share/zoneinfo
 
 To install to the local PC, just make it. Then, to execute, type in the shell:
 
